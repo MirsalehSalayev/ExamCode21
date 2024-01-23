@@ -1,0 +1,55 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    min-height: 100px;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color:white;
+    .navbarHeader {
+        width: 100%;
+        display: flex;  
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbarFoot {
+        align-items: center;
+
+        width: 100%;
+
+        display: flex;
+        justify-content: space-between;
+
+        .navbarTitles {
+            color: white;
+            gap: 20px;
+            font-size: 22px;
+            display: flex;
+            .navroute{
+                color: black;
+            }
+        }
+
+        .userAndBasket {
+            gap: 5px;
+            display: flex;
+        }
+    }
+}
+@media screen and (max-width: 320px) {
+    .navbar {
+    min-height: 80px;
+
+    }
+    .navbarHeader {
+        display: none !important    ;
+    }
+    .navbarTitles{
+      display: none !important;
+    }
+  }

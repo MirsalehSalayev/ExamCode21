@@ -1,0 +1,43 @@
+.Featured{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap ;
+    justify-content: space-around;
+    .FeaturedCard{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        .FeaturedName{
+            font-size: 22px;
+        }
+        .FeaturedImg{
+            position: relative;
+
+            .FeaturedImage{
+
+                width: 300px;
+                height: 300px;
+            }
+            .iconDiv{
+                cursor: pointer;
+                top: 5%;
+                position: absolute;
+                right: 8%;
+                .fa-solid.fa-heart{
+                    
+                }
+            }
+        }
+        .buttonDetail{
+            width: 90px;
+            font-size: 22px;
+            background-color: black;
+            border:1px solid white;
+            color: white;
+            height: 40px;
+
+        }
+        
+    }
+    
+}
